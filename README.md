@@ -54,6 +54,46 @@ Example:
 cd /odoo
 ```
 ### Unzip filestore and move to specific folder
+1. Unzip the filestore 
+```
+unzip filename.zip
+Example:
+unzip production.zip
+```
+2. Move the file to filestore 
+```
+sudo mv unzipped_folder_name/ /path/to/your/filestore
+Example
+sudo mv filestore/ /odoo/.local/share/Odoo/filestore
+```
+
+### Now creating the database and uload psql file 
+1. Goto server using ssh 
+```
+ssh user@ip
+```
+2. Goto your postgres user
+```
+sudo su - postgres
+```
+3. Goto the folder you have sql file 
+```
+cd /path/to/your/uploaded/sql/file
+Example
+cd /odoo
+```
+4. Create Database and Upload 
+```
+createdb -O db_user dbname
+Example:
+createdb -O odoo Sakan.live
+psql db_name < sql_file_you_want_to_upload
+Example:
+psql Sakan.live < sakan.sql
+```
+
+# You are Done
+
 
 
 
