@@ -92,6 +92,15 @@ Example:
 psql Sakan.live < sakan.sql
 ```
 
+## Its Time to Setup PDF Report
+
+1. Go to settings > Technical > Parameters > System parameters
+2. Make a new paramater
+a. Name: web.base.url.freeze
+b. Value: True
+3. Edit the parameter web base.url and place the ip on http://0.0.0.0:8069
+4. Refresh and everything is fixed.
+
 # You are Done
 
 
