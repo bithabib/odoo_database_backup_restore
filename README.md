@@ -100,7 +100,12 @@ a. Name: web.base.url.freeze
 b. Value: True
 3. Edit the parameter web base.url and place the ip on http://0.0.0.0:8069
 4. Refresh and everything is fixed.
-
+### Still you may face some problem to show image if yes here is the solution 
+```
+sudo wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb
+sudo dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb
+sudo apt install -f
+```
 # You are Done
 
 
