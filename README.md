@@ -1,11 +1,24 @@
 # Odoo Database Backup Restore
+### Take backup of all the custom modules
+1. Goto you custom module folder
+```
+cd /path/to/your/custom/modules
+Example:
+cd /odoo18/custom
+```
+2. Convert your desired folder to zip
+
+```
+sudo apt install zip unzip
+zip -r filename.zip folder
+```
 
 ### 1. Take Backup of Database 
 1. Goto server using ssh 
 ```
 ssh user@ip
 ```
-3. Goto your postgres user
+2. Goto your postgres user
 ```
 sudo su - postgres
 ```
